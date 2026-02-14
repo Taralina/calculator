@@ -8,6 +8,9 @@ def subtract(a, b):
 def multiply(a, b):
     return a * b
 
+def divide(a, b):
+    return a / b
+
 def main():
     print("=== Калькулятор ===")
     print("1. Сложение")
@@ -24,6 +27,8 @@ def main():
         result = subtract(a, b)
     elif choice == "3":
         result = multiply(a, b)
+    elif choice == "4":
+        result = divide(a, b)     
     else:
         print("Ошибка: неверный выбор")
         return
